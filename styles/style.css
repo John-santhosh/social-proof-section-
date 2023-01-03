@@ -23,6 +23,8 @@
 body{
     font-family: 'League Spartan', sans-serif;
     margin: 1rem;
+    background: url('../images/bg-pattern-top-mobile.svg') left top/contain no-repeat, url('../images/bg-pattern-bottom-mobile.svg')right bottom/80% no-repeat;
+    height: 100vh;
 }
 
 h4{
@@ -40,6 +42,7 @@ h1{
 }
 .testimonials{
     height: 100%;
+    padding-bottom: 5rem ;
 }
 .testimonials .col{
     background: var(--Very-Dark-Magenta);
@@ -156,6 +159,11 @@ h1{
         width: 30%;
         margin: 1%;
     }
+    body{
+        font-family: 'League Spartan', sans-serif;
+        margin: 1rem;
+        background: url('../images/bg-pattern-top-desktop.svg') left top/contain no-repeat, url('../images/bg-pattern-bottom-desktop.svg')right bottom/50% no-repeat;
+    }
     /* CUSTOM WIDTHS */
         .w-md-10 { width: 10%!important; }
         .w-lg-15 { width: 15%!important; }
@@ -169,4 +177,4 @@ h1{
         .w-lg-70 { width: 70%!important; }
         .w-lg-75 { width: 75%!important; }
 
-}
+    }
