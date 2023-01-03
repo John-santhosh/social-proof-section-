@@ -24,14 +24,7 @@ body{
     font-family: 'League Spartan', sans-serif;
     margin: 1rem;
 }
-.container{
-    /* width: 375px; */
-    /* background: pink; */
-    /* padding: 2rem; */
-}
-/* .row{
-    flex-direction: column;
-} */
+
 h4{
     color: var(--White);
     margin-bottom: 0;
@@ -45,12 +38,12 @@ h1{
     color: var(--Very-Dark-Magenta);
     font-size: 2.5rem;
 }
-
+.testimonials{
+    height: 100%;
+}
 .testimonials .col{
-    /* width: 375px; */
     background: var(--Very-Dark-Magenta);
     padding: 2rem 2rem 2rem;
-    
     border-radius: .6rem
 }
 
@@ -67,11 +60,14 @@ h1{
 }
 
 /* ratings */
-.ratings .col{
+.ratings{
+    align-self: center;
+}
+.ratings > .col{
     background:var(--Light-Grayish-Magenta);
     padding: 1rem;
     border-radius: 1rem;
-    
+    /* background-color: aqua; */
 }
 .ratings h5{
     color: var(--Very-Dark-Magenta);
@@ -86,8 +82,6 @@ h1{
     margin: auto;
     width: 20px;
     margin-bottom: .625rem;
-
-    /* padding: 1rem; */
 }
 
 /* hero */
@@ -96,6 +90,83 @@ h1{
     font-size: 20px;
     font-weight: 500;
 }
-
+/* .size::after{
+    content: 'xs';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: green;
+    
+} */
 /* large screen settings  */
 
+/* CUSTOM WIDTHS */
+.w-10, .w-xs-10 { width: 10%!important; }
+.w-15, .w-xs-15 { width: 15%!important; }
+.w-20, .w-xs-20 { width: 20%!important; }
+
+/* BREAKPOINTS */
+
+/* SM breakpoint */
+@media (min-width: 576px) {
+    /* .size::after{
+        content: 'sm -576px';} */
+    /* CUSTOM WIDTHS */
+    .w-sm-10 { width: 10%!important; }
+    .w-sm-15 { width: 15%!important; }
+    .w-sm-20 { width: 20%!important; }
+    .w-sm-30 { width: 30%!important; }
+    .w-sm-40 { width: 40%!important; }
+    .w-sm-45 { width: 45%!important; }
+    .w-sm-60 { width: 60%!important; }
+    .w-sm-70 { width: 70%!important; }
+
+}
+
+/* MD breakpoint*/
+@media (min-width: 768px) {
+    /* CUSTOM WIDTHS */
+
+    /* .size::after{
+        content: 'md -768px';} */
+
+        .w-md-10 { width: 10%!important; }
+        .w-md-15 { width: 15%!important; }
+        .w-md-20 { width: 20%!important; }
+        .w-md-25 { width: 25%!important; }
+        .w-md-30 { width: 30%!important; }
+        .w-md-40 { width: 40%!important; }
+        .w-md-45 { width: 45%!important; }
+        .w-md-55 { width: 55%!important; }
+        .w-md-60 { width: 60%!important; }
+        .w-md-65 { width: 65%!important; }
+        .w-md-70 { width: 70%!important; }
+
+}
+
+/* LG breakpoint */
+@media (min-width: 992px) {
+    /* .size::after{
+        content: 'lg -992px';} */
+
+    .testimonials {
+        height: 400px;
+    }
+    .testimonials .col{
+        width: 30%;
+        margin: 1%;
+    }
+    /* CUSTOM WIDTHS */
+        .w-md-10 { width: 10%!important; }
+        .w-lg-15 { width: 15%!important; }
+        .w-lg-20 { width: 20%!important; }
+        .w-lg-30 { width: 30%!important; }
+        .w-lg-40 { width: 40%!important; }
+        .w-lg-45 { width: 45%!important; }
+        .w-lg-55 { width: 55%!important; }
+        .w-lg-60 { width: 60%!important; }
+        .w-lg-65 { width: 65%!important; }
+        .w-lg-70 { width: 70%!important; }
+        .w-lg-75 { width: 75%!important; }
+
+}
